@@ -13,6 +13,7 @@
     <div class="container bg-dark mt-5">
         <div class="row ">
             <form class="col-sm-12" name="form">
+                
                 <div class="box">
                     <input type="text" class="form-control" id=inpBox" name="input" maxlength="10">
                 </div>
@@ -23,31 +24,36 @@
                     <button type="button" class="btn bg-light" value="9" onclick="form.input.value += '9'">9</button>
                     <button type="button" class="btn btn-secondary" value="*" onclick="form.input.value += '*'">x</button>
                 </div>
+
                 <div class="mt-2">
                     <button type="button" class="btn bg-light" value="4" onclick="form.input.value += '4'">4</button>
                     <button type="button" class="btn bg-light" value="5" onclick="form.input.value += '5'">5</button>
                     <button type="button" class="btn bg-light" value="6"onclick="form.input.value += '6'">6</button>
                     <button type="button" class="btn btn-secondary" value="/" onclick="form.input.value += '/'">÷</button>
                 </div>
+
                 <div class="mt-2">
                     <button type="button" class="btn bg-light" value="1" onclick="form.input.value += '1'">1</button>
                     <button type="button" class="btn bg-light" value="2" onclick="form.input.value += '2'">2</button>
                     <button type="button" class="btn bg-light" value="3" onclick="form.input.value += '3'">3</button>
                     <button type="button" class="btn btn-secondary" value="-" onclick="form.input.value += '-'">-</button>
                 </div>
+
                 <div class="mt-2">
                     <button type="button" class="btn bg-light" value="." onclick="form.input.value += '.'">.</button>
                     <button type="button" class="btn bg-light" value="0" onclick="form.input.value += '0'">0</button>
                     <button type="button" class="btn bg-light" value='C' onclick="form.input.value = ' '">C</button>
                     <button type="button" class="btn btn-secondary" value="+" onclick="form.input.value +='+'">+</button>
                 </div>
+
                 <div class="mt-2 mb-3">
                     <button type="button" id="equals" class="btn" value="=" onclick = "form.input.value = eval(form.input.value)">=</button>
                 </div>
+
             </form> 
         </div>
     </div> 
+
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
