@@ -1,6 +1,9 @@
 body{
     background-color: rgb(180, 208, 226);
 }
+input{
+    text-align: end;
+}
 .container{
     max-width: 200px;    
     border-radius:20px;
