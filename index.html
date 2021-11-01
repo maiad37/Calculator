@@ -14,40 +14,38 @@
         <div class="row ">
             <form class="col-sm-12" name="form">
                 <div class="box">
-                    <input type="text" class="form-control" id=res" name="input"  maxlength="10">
+                    <input type="text" class="form-control" id=res" name="input" maxlength="10">
                 </div>
             
-                <div class="mt-3">
+                <div class="mt-2">
                     <button type="button" class="btn bg-light" value="7" onclick="form.input.value += '7'">7</button>
                     <button type="button" class="btn bg-light" value="8" onclick="form.input.value += '8'">8</button>
                     <button type="button" class="btn bg-light" value="9" onclick="form.input.value += '9'">9</button>
-                    <button type="button" class="btn btn-secondary" value="*">x</button>
+                    <button type="button" class="btn btn-secondary" value="*" onclick="form.input.value += '*'">x</button>
                 </div>
-                <div class="mt-3">
+                <div class="mt-2">
                     <button type="button" class="btn bg-light" value="4" onclick="form.input.value += '4'">4</button>
                     <button type="button" class="btn bg-light" value="5" onclick="form.input.value += '5'">5</button>
                     <button type="button" class="btn bg-light" value="6"onclick="form.input.value += '6'">6</button>
-                    <button type="button" class="btn btn-secondary" value="/" onclick="form.input.value += '÷'">÷</button>
+                    <button type="button" class="btn btn-secondary" value="/" onclick="form.input.value += '/'">÷</button>
                 </div>
-                <div class="mt-3">
+                <div class="mt-2">
                     <button type="button" class="btn bg-light" value="1" onclick="form.input.value += '1'">1</button>
                     <button type="button" class="btn bg-light" value="2" onclick="form.input.value += '2'">2</button>
                     <button type="button" class="btn bg-light" value="3" onclick="form.input.value += '3'">3</button>
                     <button type="button" class="btn btn-secondary" value="-" onclick="form.input.value += '-'">-</button>
                 </div>
-                <div class="mt-3">
+                <div class="mt-2">
                     <button type="button" class="btn bg-light" value="." onclick="form.input.value += '.'">.</button>
                     <button type="button" class="btn bg-light" value="0" onclick="form.input.value += '0'">0</button>
                     <button type="button" class="btn bg-light" value='C' onclick="form.input.value = ' '">C</button>
-                    <button type="button" class="btn btn-secondary" value="+">+</button>
+                    <button type="button" class="btn btn-secondary" value="+" onclick="form.input.value +='+'">+</button>
                 </div>
-                <div class="mt-3 mb-3">
-                    <button type="button" class="equals btn" value="=">=</button>
+                <div class="mt-2 mb-3">
+                    <button type="button" class="equals btn" value="=" onclick = "form.input.value = eval(form.input.value)">=</button>
                 </div>
             </form> 
         </div>
     </div> 
-
-    <script src="script.js"></script>
 </body>
 </html>
